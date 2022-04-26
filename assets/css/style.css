@@ -1,0 +1,169 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    top: 10px;
+    margin: 30px;
+    align-self: center;
+    align-items: center;
+}
+.wraper {
+    margin: 30px auto;
+    text-align: center;
+}
+.btn {
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    width: max-content;
+    font-size: large;
+    border: none;
+}
+.toggle-btn {
+    background-color: aqua;
+    color: black;
+    transition: all .6s;
+    cursor: pointer;
+    transform: translate(0px, 120%);
+    opacity: 0;
+}
+.toggle-btn.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.toggle-btn:hover {
+    background-color: #5470a1;
+    color: aquamarine;
+}
+
+
+.table {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
+
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #58b1e8cb;
+    border-spacing: 5px;
+    width: 80%;
+    padding: 0 10px;
+
+    color: aliceblue;
+}
+.table th, td {
+    width: 33.3333%;
+    padding: 10px;
+}
+.table th{
+    font-size: 15px;
+    padding-top: 20px;
+
+}
+.table td{
+    background-color: rgba(137, 182, 55, 0.897);
+    border-radius: 5px;
+    box-shadow: 5px #5470a1;
+}
+.row {
+    transition: all 2s;
+    opacity: 0;
+    transform: translate(-130%, 0);
+}
+.row.active {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+
+/* Форма добавления */
+
+
+.group{
+    margin: 5px 0;
+    margin-bottom: 10px;
+}
+.group .lable {
+    margin: 5px 0;
+    font-size: 14pt;
+}
+.group lable {
+    font-size: 16pt;
+    padding-top: 10px;
+}
+.group .input{
+    font-size: 16pt;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+.group.input :active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+    
+}
+.group.input:active {
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+.btn-submit{
+    padding: 10px 15px;
+    background-color: greenyellow;
+    color: black;
+    transition: all .4s;
+}
+.btn-submit:hover {
+    background-color: chartreuse;
+    color: darkblue;
+}
+#form {
+    box-sizing: border-box;
+    position: fixed;
+    top: 30px;
+    right: -500px;
+    width: 500px;
+    height: max-content;
+    background-color: rgba(67, 196, 196, 0.85);
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 25px;
+    transition: all 200ms;
+    opacity: 0;
+}
+#form.active {
+    opacity: 1;
+    right: 0px;
+    margin-right: 10px;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 2px;
+    transition: all .5s;
+}
+.close:hover{
+    background-color:rgba(255, 255, 255, 0.466);
+}
+.error{
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    padding: 20px 10px;
+}
